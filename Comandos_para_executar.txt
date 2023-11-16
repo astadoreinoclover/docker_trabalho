@@ -3,7 +3,7 @@
 |                                                                      |
 |docker-compose up -d                                                  |
 |                                                                      |
-|docker exec -i projeto-mysql-1 mysql -uroot -p1234 <api/db/script.sql |
+|docker exec -i "nome do container no docker referente ao mysql" mysql -uroot -p1234 <api/db/script.sql |
 |______________________________________________________________________|
 
 
