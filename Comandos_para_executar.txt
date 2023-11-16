@@ -1,0 +1,19 @@
+-----------------no terminal:------------------------------------------
+|npm install                                                           |
+|                                                                      |
+|docker-compose up -d                                                  |
+|                                                                      |
+|docker exec -i projeto-mysql-1 mysql -uroot -p1234 <api/db/script.sql |
+|______________________________________________________________________|
+
+
+entrar no container mysql:
+   entrar em exec, e digitar:
+
+        mysql -uroot -p1234;
+
+        use docker;
+
+        show tables;
+
+        select * from aluno;

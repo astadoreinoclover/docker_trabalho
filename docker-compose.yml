@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  node:
+    image: node:14
+    working_dir: /home/node/app
+    volumes:
+      - ./api:/home/node/app
+    ports:
+      - "9001:9001"
+    command: npm start
+
+  mysql:
+    image: mysql:latest
+    volumes:
+      - ./api/db/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: docker
